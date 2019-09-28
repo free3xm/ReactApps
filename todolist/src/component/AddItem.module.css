@@ -1,0 +1,82 @@
+.toDoItem{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+.toDoItemCheck{
+  cursor: pointer;
+  flex-shrink: 0;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow:   1px 1px 0 #eee,
+               1px 2px 0 #eaeaea,
+               2px 3px 0 #e5e5e5;
+}
+.checked{
+  cursor: pointer;
+  flex-shrink: 0;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow:   1px 1px 0 #eee,
+               1px 2px 0 #eaeaea,
+               2px 3px 0 #e5e5e5;
+}
+.checked:before{
+  content: "";
+  transform-origin:bottom;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 17.5px;
+  left: 0;
+  width: 20px;
+  height: 5px;
+  background: #0ccf30;
+}
+.checked:after{
+  transform-origin: bottom;
+  content: "";
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 12.5px;
+  right: -12px;
+  width: 35px;
+  height: 5px;
+  background: #0ccf30;
+
+}
+.toDoItemText{
+  background: #fff;
+  border-radius: 10px;
+  padding: 3px 0 3px 20px ;
+  width: 90%;
+  font-size: 30px;
+  color: #222;
+}
+.toDoItemDelete{
+  cursor: pointer;
+  background:  url("../img/delete.svg") no-repeat center / cover;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  box-shadow:  .5px .5px 0 #ac1c0d,
+               1px 1px 0 #a51c0e,
+               1.5px 2px 0 #a31d0f,
+               2px 3px 0 #9b1b0e;
+}
+.checkedText{
+  text-decoration: line-through ;
+  color: #777;
+  background: #fff;
+  border-radius: 10px;
+  padding: 3px 0 3px 20px ;
+  width: 90%;
+  font-size: 30px;
+
+}
